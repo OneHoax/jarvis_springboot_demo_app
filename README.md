@@ -4,7 +4,10 @@ demo purposes.
 
 # Demo Video
 
-[![](https://i.imgur.com/1yfhFr8.jpg)](./assets/demo.mp4)
+<a href="https://google.com">
+<img src="https://i.imgur.com/1yfhFr8.jpg" width=500px>
+</a>
+
 
 # Usage
 
