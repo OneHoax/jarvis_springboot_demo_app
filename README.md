@@ -5,7 +5,7 @@ demo purposes.
 # Demo Video
 
 <a href="https://www.notion.so/jarviscanada/Spring-Boot-Demo-App-196eed5805e545a8819fbed78a15fd60" target="_blank">
-<img src="https://i.imgur.com/1yfhFr8.jpg" width=500px>
+<img src="https://i.imgur.com/7ZvDXFA.jpg" width=500px>
 </a>
 
 
