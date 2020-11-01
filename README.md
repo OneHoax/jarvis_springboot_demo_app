@@ -2,6 +2,10 @@
 This is a minimal Spring Boot application which is used for
 demo purposes.
 
+# Demo Video
+
+[![](https://i.imgur.com/1yfhFr8.jpg)](./assets/demo.mp4)
+
 # Usage
 
 This app uses Sprinboot profiles which allows the application
