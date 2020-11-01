@@ -8,9 +8,9 @@
     <relativePath /> <!-- lookup parent from repository -->
   </parent>
   <groupId>ca.jrvs.devops</groupId>
-  <artifactId>SimpleApp</artifactId>
+  <artifactId>SpringbootDemoApp</artifactId>
   <version>1.0.1-SNAPSHOT</version>
-  <name>SimpleApp</name>
+  <name>SpringbootDemoApp</name>
   <description>Demo project for Spring Boot</description>
 
   <properties>
@@ -54,6 +54,10 @@
           <artifactId>junit-vintage-engine</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
   </dependencies>
 

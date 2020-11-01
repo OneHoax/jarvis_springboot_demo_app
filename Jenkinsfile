@@ -27,5 +27,18 @@ pipeline {
             }
          }
       }
+      stage('Docker build') {
+         steps {
+            // Run Maven on a Unix agent.
+            sh "docker build -t jrvs/simple_app ."
+            sh "docker push jrvs/simple_app"
+         }
+      }
+
+      stage('Deoply dev') {
+         steps {
+            sh "ssh service@app-server-dev docker pull jrvs/simple_app ; docker stop simple_app; docker run ...."
+         }
+      }
    }
 }
