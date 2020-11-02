@@ -52,3 +52,35 @@ Try common endpoints using the demo app:
 * localhost:8082/actuator/env
 * localhost:8082/actuator/health
 * localhost:8082/actuator/beans
+
+# Docker
+[Dockerhub](https://hub.docker.com/r/jrvs/springboot_demo_app)
+
+```
+docker pull jrvs/springboot_demo_app
+docker run --rm -e spring_profiles_active=dev -p 8082:8082 jrvs/springboot_demo_app
+```
+
+# K8s
+Pre-requisites:
+* k8s cluster (minikube or AKS)
+
+```
+#start minikube cluster
+minkube start
+
+#show all k8s context (connection to k8s cluster)
+kubectl config get-contexts 
+
+#select a context from
+kubectl config use-context minikube
+
+#verify cluster
+kubectl cluster-info
+
+#Deploy dev and prod
+kubectl apply -f deployment-dev.yaml
+kubectl apply -f deployment-prod.yaml
+
+minikube service springboot-demo-app-dev
+```
