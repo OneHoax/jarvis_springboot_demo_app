@@ -65,6 +65,8 @@ docker run --rm -e spring_profiles_active=dev -p 8082:8082 jrvs/springboot_demo_
 Pre-requisites:
 * k8s cluster (minikube or AKS)
 
+[Video tutorial](https://www.notion.so/jarviscanada/Spring-Boot-Demo-App-196eed5805e545a8819fbed78a15fd60)
+
 ```
 #start minikube cluster
 minkube start
