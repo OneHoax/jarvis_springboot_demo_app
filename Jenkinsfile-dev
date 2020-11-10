@@ -23,11 +23,6 @@ pipeline {
     }
 
     stages {
-        stage('SCM') {
-            steps {
-                git url: 'https://github.com/jarviscanada/jarvis_springboot_demo_app.git', branch: 'develop'
-            }
-        }
         stage('Init') {
             steps {
                 sh 'az login --service-principal --username ${AZ_USER} --password ${AZ_PWD} --tenant ${AZ_TENANT}'
@@ -46,6 +41,8 @@ pipeline {
                 sh 'kubectl cluster-info'
                 //Deploy the new image
                 sh 'kubectl set image ${DEPLOYMENT_NAME} springboot-demo-app=${DOCKER_REPO}/${IMAGE_NAME}'
+                //Check result
+                sh 'kubectl get all'
             }
         }
     }
